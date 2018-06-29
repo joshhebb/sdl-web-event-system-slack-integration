@@ -11,7 +11,7 @@ namespace Slack.Events
     public class Events: TcmExtension
     {
         // TODO : Update this URL with the webhook in your slack application.
-        private const string SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
+        private const string SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/000/111/222";
 
         /// <summary>
         /// Default constructor to subscribe all of the events.
