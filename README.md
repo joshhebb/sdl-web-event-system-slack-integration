@@ -16,6 +16,7 @@ Once you have your Slack application setup, it's easy to enable webhooks.
 * Grab the webhook URL.
 
 ![Enabling slack webhooks](http://whobrokethebuild.me/wp-content/uploads/enable-webhook.gif)
+
 [Learn more about Slack workspaces here.](https://get.slack.help/hc/en-us/articles/115004071768-What-is-Slack-)
 
 
@@ -23,6 +24,10 @@ Once you have your Slack application setup, it's easy to enable webhooks.
 With the project pulled down to your local environment, open **Events.cs** and update the constant **SLACK_WEBHOOK_URL** with your Webhook URL. 
 
 Build the project and deploy the DLL. [Read more about deploying an Event-System DLL in Web 8.5](https://docs.sdl.com/LiveContent/content/en-US/SDL%20Web-v5/GUID-AB4FBF5F-7C3B-4804-9E7F-FBBF5514A596#docid=GUID-87B291DD-99C5-4124-BDAE-B49182072ABA&filename=GUID-6363D3C7-0604-49DF-AF3D-86A1AC446CBB.xml&query=&scope=&tid=&resource=&inner_id=&addHistory=true&toc=false&eventType=lcContent.loadDocGUID-87B291DD-99C5-4124-BDAE-B49182072ABA)
+
+When pages are published, you'll see the following in the Slack Channel you selected when creating the webhook in your slack app.
+
+![Slack Bot](http://whobrokethebuild.me/wp-content/uploads/sdl-web-bot.png)
 
 ### Project Details
 The project uses two Nuget libraries:
