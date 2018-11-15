@@ -1,17 +1,15 @@
 ﻿using System;
 using Tridion.ContentManager.Extensibility;
-using Tridion.ContentManager.ContentManagement;
 using Tridion.ContentManager.Extensibility.Events;
-using Tridion.ContentManager.Publishing;
 using Tridion.ContentManager.CommunicationManagement;
 
 namespace Slack.Events
 {
     [TcmExtension("SlackEvents")]
-    public class Events: TcmExtension
+    public class Events : TcmExtension
     {
         // TODO : Update this URL with the webhook in your slack application.
-        private const string SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/000/111/222";
+        private const string SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
 
         /// <summary>
         /// Default constructor to subscribe all of the events.
@@ -32,7 +30,11 @@ namespace Slack.Events
         private void OnPublish(Page page, SetPublishStateEventArgs e, EventPhases phase)
         {
             SlackClient client = new SlackClient(SLACK_WEBHOOK_URL);
-            client.PostMessage(text: "Page '" + page.Title + "' was published to " + e.Target.Title + " at " + DateTime.Now);
+
+            string status = e.IsPublished ? "published" : "unpublished";
+            client.PostMessage(text: "Page '" + page.Title + "' was " + status + " to " + e.Target.Title + " at " + DateTime.Now);
         }
+
+
     }
 }

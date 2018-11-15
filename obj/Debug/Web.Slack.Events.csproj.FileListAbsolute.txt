@@ -1,4 +1,0 @@
-C:\Users\Administrator\source\repos\Web.Slack.Events\Web.Slack.Events\obj\Debug\Web.Slack.Events.csprojAssemblyReference.cache
-C:\Users\Administrator\source\repos\Web.Slack.Events\Web.Slack.Events\obj\Debug\Web.Slack.Events.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\source\repos\Web.Slack.Events\Web.Slack.Events\obj\Debug\Web.Slack.Events.dll
-C:\Users\Administrator\source\repos\Web.Slack.Events\Web.Slack.Events\obj\Debug\Web.Slack.Events.pdb
